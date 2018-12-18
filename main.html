@@ -3,11 +3,19 @@
 <head>
 	<meta charset = 'UTF-8'>
 	<title> Monk's Cafe</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
  </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar-inverse" data-offset="50">
+
+<script id="reservation-template" type="text/x-handlebars-template">
+  <tr>
+    <td>{{name}}</td>
+    <td>{{day}}</td>
+  </tr>
+</script>
 
     <header>
      <h1>Monk's Cafe</h1>
@@ -47,18 +55,8 @@
 
 <section>
   <h2>Come Dine with Us</h2>
-  <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.0247878781393!2d-73.96763018482953!3d40.805449079321825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ4JzE5LjYiTiA3M8KwNTcnNTUuNiJX!5e0!3m2!1sen!2sus!4v1543259658777" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-  <script>
-    var map;
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), 
-      {
-        center: {lat: 40.8054491, lng: -73.9654415},
-        zoom: 8
-      });
-    }
-  </script>
-</div>
+  <div id="map">
+  </div>
 
 </section>
 
@@ -75,11 +73,13 @@
 </section>
 
 <footer>
-</footer>
-
+  <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js"></script>
 	<script src="js/jquery-3.0.0.js"></script>
-	<script src="js/main.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAl8DlmButKgx_QVzPJBPgjgRxaGFzPgE&callback=initMap"></script>
+  <script src="js/main.js"></script>
+</footer>
 	
 </body>
 </html>
