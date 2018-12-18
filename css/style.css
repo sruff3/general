@@ -39,6 +39,8 @@ th {
   width: 50%;
   margin: 10px;
   text-align: center;
+  position: relative;
+  height: 100%;
   border-style: solid;
 }
 
