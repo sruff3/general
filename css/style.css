@@ -4,6 +4,10 @@ h1 {
 
 h2 {
   text-align: center;
+  background-color: #a6b2bc;
+  margin-bottom: 15px;
+  border-style: solid;
+  border-width: .25px;
 }
 
 h3 {
@@ -17,31 +21,39 @@ h4 {
 
 table {
   text-align: center;
-  border: 1px solid grey;
 }
 
 thead {
   text-align: center;
-  border: .5px solid grey;
+  background-color: white;
 }
 
 th {
   text-align: center;
-  border: .5px solid grey;
 }
+
+header{
+  background-color: #a6b2bc;
+}
+
 
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
+  text-align: center;
 }
 
 .flex-container .box {
   width: 50%;
-  margin: 10px;
+  margin: 50px;
   text-align: center;
   position: relative;
-  height: 100%;
+  height: 385px;
   border-style: solid;
+}
+
+.container-fluid{
+  background-color: white;
 }
 
 img {
@@ -50,7 +62,122 @@ img {
 
 #map {
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height:400px;
+}
+
+.restaurant-pic {
+  height: 50vh;
+  background: url('https://i.ytimg.com/vi/7mphrlxJl5k/maxresdefault.jpg');
+  background-size: cover;
+  background-position: 0 40%;
+}
+
+.restaurant-info {
+  height: 50vh;
+}
+
+.reservation {
+  height: 25vh;
+
+}
+
+.reservation-form-container {
+  position: relative;
+  height: 100%;
+}
+
+.reservation-form {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.restaurant-locator {
+  height: 50vh;
+}
+
+.reservation-day p:hover{
+  background-color: #a6b2bc;
+}
+
+.restaurant-pic {
+  height: 50vh;
+  background: url('https://i.ytimg.com/vi/7mphrlxJl5k/maxresdefault.jpg');
+  background-size: cover;
+  background-position: 0 40%;
+}
+
+#navbar{
+  position: fixed;
+}
+
+.filler{
+  height:30vh;
+  background: url("https://i.imgur.com/neBvBY1.jpg");
+   background-size: cover;
+  background-position: 0 40%;
+  margin-bottom: 10px;
+}
+
+.hours{
+  float: left;
+  width:33%;
+  height: 250px;
+  border-style: solid;
   text-align: center;
+  margin:1px;
+}
+
+.contact{
+  float: left;
+  width:33%;
+  height: 250px;
+  border-style: solid;
+  text-align: center;
+  margin:1px;
+}
+
+.contact p{
+  margin-top: 30px;
+}
+
+.social{
+  float: left;
+  width:33%;
+  height: 250px;
+  border-style: solid;
+  text-align: center;
+  margin:1px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 100px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.footer div:hover{
+  background-color: #a6b2bc;
 }
